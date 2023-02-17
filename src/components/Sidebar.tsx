@@ -83,9 +83,6 @@ export default function Sidebar() {
         name: "Sign out",
       },
   ];
-
-
-
   return (
     <div className="w-3/12 bg-[#00152F]  overflow-auto pb-8 sidebar">
       <div className="flex gap-5">
@@ -101,7 +98,7 @@ export default function Sidebar() {
                 name === "Item Search" ? "bg-[#064A71]" : ""
               }`}
             >
-              <a href="#" className="flex items-center gap-5 text-white">
+              <a href="/" className="flex items-center gap-5 text-white">
                 {icon}
                 <span className="text-sm tracking-wider text-white">
                   {name}
@@ -119,7 +116,7 @@ export default function Sidebar() {
         {helpLinks.map(({ icon, name }) => {
           return (
             <li key={name} className={`pl-6 py-3 hover:bg-[#064A71] `}>
-              <a href="#" className="flex items-center gap-5 text-white">
+              <a href="/" className="flex items-center gap-5 text-white">
                 {icon}
                 <span className="text-sm tracking-wider text-white">{name}</span>
               </a>
